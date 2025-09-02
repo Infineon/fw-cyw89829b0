@@ -76,6 +76,20 @@ This component should be used with non-PAWR and non-WBMS applications. To includ
 - DISABLE_COMPONENTS+= BTFW-BGA77-TX10
 - COMPONENTS+= BTFW-BGA77-TX0
 
+## COMPONENT_BTFW-SNIFF-TX0
+Contains FW patch for 0dBm TX Power for QFN48 package.
+This component should be used Car Access applications. To include this component in application, add the lines provided below to application makefile:
+
+- DISABLE_COMPONENTS+= BTFW-SNIFF-TX0
+- COMPONENTS+= BTFW-SNIFF-TX0
+
+## COMPONENT_BTFW-SNIFF-TX10
+Contains FW patch for 10dBm TX Power for QFN48 package.
+This component should be used Car Access applications. To include this component in application, add the lines provided below to application makefile:
+
+- DISABLE_COMPONENTS+= BTFW-SNIFF-TX10
+- COMPONENTS+= BTFW-SNIFF-TX10
+
 ## COMPONENT_BTFW-BGA77-TX10
 Contains FW patch for 10dBm TX Power for BGA77 package.
 This component should be used with non-PAWR and non-WBMS applications. BSP selects this component by default.
